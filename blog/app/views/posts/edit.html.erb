@@ -1,0 +1,7 @@
+<div class="container">
+ <h1>Edit post #<%= @post.id %></h1>
+ <%= render 'form', post: @post %>
+ <p><l1><a href="/posts/<%= @post.id %>">Details page for <%= @post.id %></a></li></p>
+ <%= link_to "Delete this post", "/posts/#{@post.id}", method: :DELETE %>
+ <p><l1><a href="/">Home</a></li></p>
+</div>
